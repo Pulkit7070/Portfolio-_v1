@@ -24,10 +24,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://portfolio2-cxfu6sjvb-pulkit7070s-projects.vercel.app/send-email", form);
-
-
-
+      const response = await axios.post("http://localhost:5000/send-email", form);
 
       if (response.data.success) {
         alert("Email sent successfully!");
