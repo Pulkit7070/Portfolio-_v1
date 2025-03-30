@@ -1,4 +1,4 @@
-import ayLabel from "./company/ayLabel.webp";
+import ayLabel from "./company/aylabel.webp";
 import close from "./close.svg";
 import cpp from "./tech/cpp.webp";
 import encryptix from "./company/encryptix.png";
