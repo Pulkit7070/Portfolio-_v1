@@ -36,7 +36,7 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      key={forceRender} // Forces component to re-render on resize
+      key={forceRender} 
       shadows
       frameloop="always"
       camera={{ position: [20, 3, 5], fov: 25 }}
