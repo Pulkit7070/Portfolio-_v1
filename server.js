@@ -7,7 +7,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;  // Ensuring correct port for Vercel
 
 // Configure CORS properly
 const allowedOrigins = ["http://localhost:3000", "https://yourfrontend.vercel.app"];
@@ -54,6 +54,12 @@ app.post("/send-email", async (req, res) => {
     res.status(500).json({ success: false, message: "Email sending failed!", error });
   }
 });
+
+// Default route for testing
+app.get("/", (req, res) => {
+  res.send("Server is running!");
+});
+
 
 // Start server
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

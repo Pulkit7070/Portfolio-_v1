@@ -24,7 +24,9 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://portfolio-v1-mu-one.vercel.app/send-email", form);
+      const response = await axios.post("https://portfolio2-cxfu6sjvb-pulkit7070s-projects.vercel.app/send-email", form);
+
+
 
 
       if (response.data.success) {
