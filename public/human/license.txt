@@ -1,0 +1,11 @@
+Model Information:
+* title:	Human 3D model scanned with iPhone X
+* source:	https://sketchfab.com/3d-models/human-3d-model-scanned-with-iphone-x-73e467dfc8a04914bb314a9410077858
+* author:	in3D (https://sketchfab.com/in3D_io)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Human 3D model scanned with iPhone X" (https://sketchfab.com/3d-models/human-3d-model-scanned-with-iphone-x-73e467dfc8a04914bb314a9410077858) by in3D (https://sketchfab.com/in3D_io) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
