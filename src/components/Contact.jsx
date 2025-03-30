@@ -24,7 +24,8 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/send-email", form);
+      const response = await axios.post("https://your-backend.vercel.app/send-email", form);
+
 
       if (response.data.success) {
         alert("Email sent successfully!");
