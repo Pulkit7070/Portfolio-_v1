@@ -24,7 +24,8 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("/api/server", form); // Updated API route for Vercel deployment
+      // Make the API call to send the email
+      const response = await axios.post("/api/server", form);
 
       if (response.data.success) {
         alert("Email sent successfully!");
