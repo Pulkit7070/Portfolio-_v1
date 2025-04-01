@@ -24,7 +24,7 @@ const Contact = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post("https://portfolio-v1-mu-one.vercel.app/apisend-email", form);
+      const response = await axios.post("/api/server", form); // Updated API route for Vercel deployment
 
       if (response.data.success) {
         alert("Email sent successfully!");

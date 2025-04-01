@@ -1,23 +1,15 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = req.body;
 
     try {
-      await transporter.sendMail({
-        from: process.env.EMAIL_USER,
-        to: process.env.EMAIL_USER,
+      await resend.emails.send({
+        from: "prateeksaraf9@gmail.com", // Use your verified sender email
+        to: "pulkitsaraf.dev@gmail.com",
         subject: "New Contact Form Submission",
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       });
