@@ -34,6 +34,9 @@ const Hero = () => {
   </p>
 </div>
         <div className="absolute top-[1px] right-[5px] mb-5 flex gap-6 z-10">
+        <a href="https://drive.google.com/file/d/1L-lDw5xORaofTZa2Fp6SMuEtzCpnDkYu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <div className="text-gray-300 text-2xl hover:scale-110 transition duration-300 cursor-pointer">CV</div>
+        </a>
         <a href="https://www.linkedin.com/in/pulkit-saraf-893213290/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-[#0077B5] text-2xl hover:scale-110 transition duration-300 cursor-pointer" />
         </a>
