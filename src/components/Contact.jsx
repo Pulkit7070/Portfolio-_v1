@@ -26,7 +26,6 @@ const Contact = () => {
     try {
       // Make the API call to send the email
       const response = await axios.post("/api/server", form);
-
       if (response.data.success) {
         alert("Email sent successfully!");
         setForm({ name: "", email: "", message: "" });
